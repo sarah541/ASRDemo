@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+  <Button
+      android:id="@+id/english"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/english"
+      app:layout_constraintEnd_toStartOf="@id/hindi"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <Button
+      android:id="@+id/hindi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/hindi"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/english"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <Button
+      android:id="@+id/bengali"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/bengali"
+      app:layout_constraintEnd_toStartOf="@id/gujarati"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/english"
+      />
+
+  <Button
+      android:id="@+id/gujarati"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/gujarati"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/bengali"
+      app:layout_constraintTop_toBottomOf="@id/hindi"
+      />
+
+  <Button
+      android:id="@+id/kannada"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/kannada"
+      app:layout_constraintEnd_toStartOf="@id/malayalam"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/bengali"
+      />
+
+  <Button
+      android:id="@+id/malayalam"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/malayalam"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/kannada"
+      app:layout_constraintTop_toBottomOf="@id/gujarati"
+      />
+
+  <Button
+      android:id="@+id/marathi"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/marathi"
+      app:layout_constraintEnd_toStartOf="@id/tamil"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/kannada"
+      />
+
+  <Button
+      android:id="@+id/tamil"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/tamil"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/marathi"
+      app:layout_constraintTop_toBottomOf="@id/malayalam"
+      />
+
+  <Button
+      android:id="@+id/telugu"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/telugu"
+      app:layout_constraintEnd_toStartOf="@id/urdu"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/marathi"
+      />
+
+  <Button
+      android:id="@+id/urdu"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="@string/urdu"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/telugu"
+      app:layout_constraintTop_toBottomOf="@id/tamil"
+      />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:padding="16dp"
+      android:scrollbars="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/telugu"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>
